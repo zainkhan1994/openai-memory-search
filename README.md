@@ -20,16 +20,10 @@ Search your own exported ChatGPT or message data semantically — like asking yo
 
 ## 🧰 Setup
 
-```bash
-git clone https://github.com/zainkhan1994/openai-memory-search.git
-cd openai-memory-search
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
 🔐 API Key
 Create a .env file:
 
-ini
+env
 Copy
 Edit
 OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -40,21 +34,18 @@ bash
 Copy
 Edit
 flattened_output/conversations.jsonl
-You can flatten OpenAI exports using embed_and_index.py or any tool that outputs {"content": "...", "role": "..."} per line.
+You can flatten OpenAI exports using embed_and_index.py
+or any tool that outputs: {"content": "...", "role": "..."} per line.
 
 🚀 Embed Your Memory
-bash
-Copy
-Edit
+
 python embed_and_index.py
 Generates zain_index.faiss + zain_metadata.json
 
 Skips oversized or invalid messages automatically
 
 🧠 Query Your Mind
-bash
-Copy
-Edit
+
 python semantic_search.py
 Example queries:
 
@@ -65,9 +56,7 @@ netSuite vs Oracle
 personal AI assistant setup
 
 🧪 Output Preview
-yaml
-Copy
-Edit
+
 🔍 Ask your brain: epm and forecasting
 
 🧠 Top Results:
@@ -95,3 +84,6 @@ Do a graphic showing EPM services
 
 🧠 Built by Zain Khan
 A personal memory interface — from exported chat to semantically searchable archive.
+
+
+
