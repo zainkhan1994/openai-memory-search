@@ -1,6 +1,35 @@
+# Environment and credentials
 .env
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Data files (user-specific)
 *.faiss
 *.jsonl
 *.json
 flattened_output/
+
+# Temporary files
+*.log
+*.tmp
+.DS_Store
+.vscode/
+.idea/
+
+# Dependencies
+node_modules/
+.vite/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Streamlit
+.streamlit/
